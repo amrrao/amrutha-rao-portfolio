@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amrutha Rao - Portfolio
 
-## Getting Started
+A modern, responsive portfolio website showcasing my work as an AI/ML Engineer and Entrepreneur.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[View Live Portfolio](https://your-portfolio.vercel.app) <!-- Update with your actual Vercel URL -->
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI
+- **Icons**: Lucide React
+- **Deployment**: Vercel
+
+## 📁 Project Structure
+
+```
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── About.tsx
+│   ├── Contact.tsx
+│   ├── Experience.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Navigation.tsx
+│   ├── Projects.tsx
+│   ├── Skills.tsx
+│   └── ui/
+│       └── button.tsx
+├── lib/
+│   └── utils.ts
+└── public/
+    └── resume.pdf
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Responsive Design**: Works perfectly on all devices
+- **Modern UI**: Clean, professional design with smooth animations
+- **Modular Components**: Easy to maintain and extend
+- **Resume Download**: Direct download of resume PDF
+- **Project Showcase**: Featured projects with live demos
+- **Experience Timeline**: Professional work history
+- **Skills Display**: Technical skills and technologies
+- **Contact Integration**: Multiple ways to get in touch
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Open [http://localhost:3000](http://localhost:3000)** in your browser
 
-## Deploy on Vercel
+## 📝 Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To customize this portfolio for your own use:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Update personal information** in each component file
+2. **Replace resume.pdf** with your own resume
+3. **Update project data** in `components/Projects.tsx`
+4. **Modify experience** in `components/Experience.tsx`
+5. **Update skills** in `components/Skills.tsx`
+6. **Change contact information** in `components/Contact.tsx`
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📧 Contact
+
+- **Email**: arr2249@columbia.edu
+- **LinkedIn**: [linkedin.com/in/amrutha-rao-ab9360239](https://linkedin.com/in/amrutha-rao-ab9360239)
+- **Portfolio**: [your-portfolio.vercel.app](https://your-portfolio.vercel.app)
+
+---
+
+Built with ❤️ by Amrutha Rao
