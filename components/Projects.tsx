@@ -96,7 +96,7 @@ export default function Projects() {
                     </Button>
                   )}
                   {project.githubLink && (
-                    <Button size="sm" variant="outline" className="flex-1" onClick={() => window.open(project.githubLink, '_blank')}>
+                    <Button size="sm" variant="outline" className="flex-1" onClick={() => window.open(project.githubLink!, '_blank')}>
                       <Github size={16} className="mr-2" />
                       Code
                     </Button>
