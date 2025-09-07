@@ -68,7 +68,7 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-shadow group">
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-blue-600/20 flex items-center justify-center">
+              <div className="h-48 bg-gradient-to-br from-primary/20 to-muted/40 flex items-center justify-center">
                 {project.icon}
               </div>
               <div className="p-6">
