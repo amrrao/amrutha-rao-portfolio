@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Mail, ChevronDown } from "lucide-react";
+import { HyperText } from "@/components/magicui/hyper-text";
 
 interface HeroProps {
   scrollToSection: (sectionId: string) => void;
@@ -12,13 +13,10 @@ export default function Hero({ scrollToSection }: HeroProps) {
     <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-in">
-            Hi, I&apos;m{" "}
-            <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              Amrutha Rao
-            </span>
+          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-2 animate-fade-in">
+            <HyperText>Hi, I&apos;m Amrutha Rao</HyperText>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in-delay">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-4 animate-fade-in-delay">
             Builder and Software/AI Engineer
           </p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 animate-fade-in-delay-2">

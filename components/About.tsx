@@ -2,6 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { Code, Linkedin, Mail } from "lucide-react";
+import { SpinningText } from "@/components/magicui/spinning-text";
+
 
 export default function About() {
   return (
@@ -16,13 +18,9 @@ export default function About() {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="w-80 h-80 mx-auto bg-gradient-to-br from-primary/20 to-blue-600/20 rounded-full flex items-center justify-center mb-8">
-              <div className="w-72 h-72 bg-gradient-to-br from-primary/30 to-blue-600/30 rounded-full flex items-center justify-center">
-                <div className="w-64 h-64 bg-gradient-to-br from-primary/40 to-blue-600/40 rounded-full flex items-center justify-center">
-                  <Code className="text-6xl text-primary" />
-                </div>
-              </div>
-            </div>
+          <SpinningText reverse className="text-sm" duration={40} radius={20}>
+            AI/ML • Startups • Sustainable Technology • Builder • International Awards • Funding • Intern
+          </SpinningText>
           </div>
           
           <div className="space-y-6">

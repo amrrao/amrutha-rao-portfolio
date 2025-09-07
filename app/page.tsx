@@ -1,6 +1,6 @@
 "use client";
 
-import Navigation from "@/components/Navigation";
+import { SidebarFileTree } from "@/components/SidebarFileTree";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
@@ -18,15 +18,20 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation scrollToSection={scrollToSection} />
-      <Hero scrollToSection={scrollToSection} />
-      <About />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
-      <Footer />
+    <div className="min-h-screen bg-background flex">
+      {/* Sidebar File Tree */}
+      <SidebarFileTree scrollToSection={scrollToSection} />
+      
+      {/* Main Content Area */}
+      <div className="flex-1 lg:ml-64">
+        <Hero scrollToSection={scrollToSection} />
+        <About />
+        <Projects />
+        <Skills />
+        <Experience />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
