@@ -13,7 +13,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-in">
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
               Amrutha Rao
             </span>

@@ -8,13 +8,13 @@ export default function Contact() {
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-          Let's Work Together
+          Let&apos;s Work Together
         </h2>
         <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
         
         <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-          I'm always interested in new opportunities and exciting projects. 
-          Let's discuss how we can work together!
+          I&apos;m always interested in new opportunities and exciting projects. 
+          Let&apos;s discuss how we can work together!
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
