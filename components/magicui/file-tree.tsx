@@ -44,7 +44,7 @@ const useTree = () => {
   return context;
 };
 
-interface TreeViewComponentProps extends React.HTMLAttributes<HTMLDivElement> {}
+type TreeViewComponentProps = React.HTMLAttributes<HTMLDivElement>;
 
 type Direction = "rtl" | "ltr" | undefined;
 
@@ -134,7 +134,7 @@ const Tree = forwardRef<HTMLDivElement, TreeViewProps>(
       if (initialSelectedId) {
         expandSpecificTargetedElements(elements, initialSelectedId);
       }
-    }, [initialSelectedId, elements]);
+    }, [initialSelectedId, elements, expandSpecificTargetedElements]);
 
     const direction = dir === "rtl" ? "rtl" : "ltr";
 
@@ -201,8 +201,7 @@ const TreeIndicator = forwardRef<
 
 TreeIndicator.displayName = "TreeIndicator";
 
-interface FolderComponentProps
-  extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item> {}
+type FolderComponentProps = React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>;
 
 type FolderProps = {
   expandedItems?: string[];
