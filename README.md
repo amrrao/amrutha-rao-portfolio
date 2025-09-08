@@ -32,7 +32,6 @@ A modern, responsive portfolio website showcasing my work as a software engineer
 - **Responsive Design**: Works perfectly on all devices
 - **Modern UI**: Clean, professional design with smooth animations
 - **Modular Components**: Easy to maintain and extend
-- **Resume Download**: Direct download of resume PDF
 - **Project Showcase**: Featured projects with live demos
 - **Experience Timeline**: Professional work history
 - **Skills Display**: Technical skills and technologies
