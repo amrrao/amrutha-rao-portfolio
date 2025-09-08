@@ -22,7 +22,7 @@ export default function Skills() {
     { 
       icon: <Globe className="text-4xl text-primary" />, 
       title: "Tools", 
-      skills: ["Git", "Docker", "AWS", "VS Code", "Resend", "Edge Functions"] 
+      skills: ["Git", "Docker", "AWS", "VS Code", "Edge Functions"] 
     }
   ];
 

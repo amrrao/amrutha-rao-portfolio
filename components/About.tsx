@@ -16,10 +16,10 @@ export default function About() {
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="grid md:grid-cols-2 gap-2 items-center">
+          <div className="h-100 pt-40">
           <SpinningText reverse className="text-sm" duration={40} radius={20}>
-            AI/ML • Startups • Sustainable Technology • Builder • International Awards • Funding • Intern
+            AI/ML • Startups • Sustainable Technology • Builder • International Awards • Funding • Intern •
           </SpinningText>
           </div>
           

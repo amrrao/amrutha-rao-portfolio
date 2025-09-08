@@ -43,15 +43,6 @@ export default function Hero({ scrollToSection }: HeroProps) {
             Get In Touch
             <Mail className="ml-2" size={20} />
           </Button>
-          <Button 
-            variant="secondary" 
-            size="lg" 
-            className="text-lg px-8 py-6"
-            onClick={() => window.open('/resume.pdf', '_blank')}
-          >
-            Download Resume
-            <ExternalLink className="ml-2" size={20} />
-          </Button>
         </div>
 
         <div className="mt-16 animate-fade-in-delay-4">

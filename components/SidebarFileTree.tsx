@@ -1,7 +1,7 @@
 "use client";
 
 import { File, Folder, Tree } from "@/components/magicui/file-tree";
-import { ChevronLeft, ChevronRight, Menu, X } from "lucide-react";
+import { Menu, X, ChevronLeft } from "lucide-react";
 import { useState } from "react";
 
 interface SidebarFileTreeProps {
@@ -10,7 +10,6 @@ interface SidebarFileTreeProps {
 }
 
 export function SidebarFileTree({ scrollToSection, currentSection }: SidebarFileTreeProps) {
-  const [isCollapsed, setIsCollapsed] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleFileClick = (sectionId: string) => {
@@ -22,27 +21,27 @@ export function SidebarFileTree({ scrollToSection, currentSection }: SidebarFile
   return (
     <>
       {/* Mobile Hamburger Button */}
-      <button
-        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        className="fixed top-4 left-4 z-50 lg:hidden bg-background border border-border rounded-md p-2 hover:bg-accent transition-colors"
-      >
-        {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
-      </button>
+      {!isMobileMenuOpen && (
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="fixed top-4 right-4 z-50 lg:hidden bg-background border border-border rounded-md p-2 hover:bg-accent transition-colors"
+        >
+          <Menu size={20} />
+        </button>
+      )}
 
       {/* Sidebar */}
-      <div className={`fixed left-0 top-0 h-full bg-background border-r border-border transition-all duration-300 z-40 ${
-        isCollapsed ? 'w-12' : 'w-64'
-      } ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
+      <div className={`fixed left-0 top-0 h-full bg-background border-r border-border transition-all duration-300 z-40 w-64 ${
+        isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
+      }`}>
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-border">
-          {!isCollapsed && (
-            <h2 className="text-sm font-semibold text-foreground">EXPLORER</h2>
-          )}
+          <h2 className="text-sm font-semibold text-foreground">EXPLORER</h2>
           <button
-            onClick={() => setIsCollapsed(!isCollapsed)}
-            className="p-1 hover:bg-accent rounded transition-colors"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="lg:hidden p-1 hover:bg-accent rounded transition-colors"
           >
-            {isCollapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
+            <ChevronLeft className="text-muted-foreground" size={16} />
           </button>
         </div>
 
@@ -51,33 +50,28 @@ export function SidebarFileTree({ scrollToSection, currentSection }: SidebarFile
         <Tree
           className="overflow-hidden bg-background p-2"
           initialSelectedId={currentSection || "3"}
-          initialExpandedItems={["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]}
+          initialExpandedItems={["1", "2", "3", "4", "5", "6", "7", "8"]}
           elements={PORTFOLIO_ELEMENTS}
         >
           <Folder element="portfolio" value="1">
             <Folder value="2" element="sections">
               <File value="3" onClick={() => handleFileClick("home")}>
-                {!isCollapsed && <span>home.tsx</span>}
+                <span>home.tsx</span>
               </File>
               <File value="4" onClick={() => handleFileClick("about")}>
-                {!isCollapsed && <span>about.tsx</span>}
+                <span>about.tsx</span>
               </File>
               <File value="5" onClick={() => handleFileClick("projects")}>
-                {!isCollapsed && <span>projects.tsx</span>}
+                <span>projects.tsx</span>
               </File>
               <File value="6" onClick={() => handleFileClick("skills")}>
-                {!isCollapsed && <span>skills.tsx</span>}
+                <span>skills.tsx</span>
               </File>
               <File value="7" onClick={() => handleFileClick("experience")}>
-                {!isCollapsed && <span>experience.tsx</span>}
+                <span>experience.tsx</span>
               </File>
               <File value="8" onClick={() => handleFileClick("contact")}>
-                {!isCollapsed && <span>contact.tsx</span>}
-              </File>
-            </Folder>
-            <Folder value="9" element="assets">
-              <File value="10" onClick={() => window.open('/resume.pdf', '_blank')}>
-                {!isCollapsed && <span>resume.pdf</span>}
+                <span>contact.tsx</span>
               </File>
             </Folder>
           </Folder>
@@ -136,18 +130,6 @@ const PORTFOLIO_ELEMENTS = [
             id: "8",
             isSelectable: true,
             name: "contact.tsx",
-          },
-        ],
-      },
-      {
-        id: "9",
-        isSelectable: true,
-        name: "assets",
-        children: [
-          {
-            id: "10",
-            isSelectable: true,
-            name: "resume.pdf",
           },
         ],
       },
