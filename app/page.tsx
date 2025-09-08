@@ -23,7 +23,7 @@ export default function Home() {
       <SidebarFileTree scrollToSection={scrollToSection} />
       
       {/* Main Content Area */}
-      <div className="flex-1 lg:ml-64">
+      <div className="flex-1 lg:ml-64 pt-16 lg:pt-0">
         <Hero scrollToSection={scrollToSection} />
         <About />
         <Projects />

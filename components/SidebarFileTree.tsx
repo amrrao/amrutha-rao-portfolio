@@ -20,14 +20,16 @@ export function SidebarFileTree({ scrollToSection, currentSection }: SidebarFile
 
   return (
     <>
-      {/* Mobile Hamburger Button */}
+      {/* Mobile Navbar Strip */}
       {!isMobileMenuOpen && (
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="fixed top-4 right-4 z-50 lg:hidden bg-background border border-border rounded-md p-2 hover:bg-accent transition-colors"
-        >
-          <Menu size={20} />
-        </button>
+        <div className="fixed top-0 left-0 right-0 z-50 lg:hidden bg-background/95 backdrop-blur-md border-b border-border h-16 flex items-center px-4">
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="bg-background border border-border rounded-md p-2 hover:bg-accent transition-colors"
+          >
+            <Menu size={20} />
+          </button>
+        </div>
       )}
 
       {/* Sidebar */}

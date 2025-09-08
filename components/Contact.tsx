@@ -26,10 +26,6 @@ export default function Contact() {
             <Linkedin className="mr-2" size={20} />
             Connect on LinkedIn
           </Button>
-          <Button variant="secondary" size="lg" className="text-lg px-8 py-6" onClick={() => window.open('/resume.pdf', '_blank')}>
-            <ExternalLink className="mr-2" size={20} />
-            Download Resume
-          </Button>
         </div>
 
         <div className="flex justify-center space-x-6">
