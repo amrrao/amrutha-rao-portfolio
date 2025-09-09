@@ -72,9 +72,9 @@ export function SidebarFileTree({ scrollToSection, currentSection }: SidebarFile
               <File value="7" onClick={() => handleFileClick("experience")}>
                 <span>experience.tsx</span>
               </File>
-              <File value="8" onClick={() => handleFileClick("contact")}>
+              {/* <File value="8" onClick={() => handleFileClick("contact")}>
                 <span>contact.tsx</span>
-              </File>
+              </File> */}
             </Folder>
           </Folder>
         </Tree>
