@@ -1,7 +1,7 @@
 "use client";
 
 import { File, Folder, Tree } from "@/components/magicui/file-tree";
-import { Menu, X, ChevronLeft } from "lucide-react";
+import { Menu, ChevronLeft } from "lucide-react";
 import { useState } from "react";
 
 interface SidebarFileTreeProps {

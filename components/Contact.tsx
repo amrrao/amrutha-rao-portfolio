@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, ExternalLink } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 
 export default function Contact() {
   return (
