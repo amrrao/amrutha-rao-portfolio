@@ -12,18 +12,18 @@ export default function Contact() {
         </h2>
         <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
         
-        <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto">
           I&apos;m always interested in new opportunities and exciting projects. 
-          Let&apos;s discuss how we can work together!
+          Feel free to reach out to me!
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.open('mailto:arr2249@columbia.edu')}>
-            <Mail className="mr-2" size={20} />
+          <Button size="sm" className="text-sm px-8 py-6" onClick={() => window.open('mailto:arr2249@columbia.edu')}>
+            <Mail className="mr-2" size={10} />
             Send Email
           </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://linkedin.com/in/amrutha-rao-ab9360239/', '_blank')}>
-            <Linkedin className="mr-2" size={20} />
+          <Button variant="outline" size="sm" className="text-sm px-8 py-6" onClick={() => window.open('https://linkedin.com/in/amrutha-rao-ab9360239/', '_blank')}>
+            <Linkedin className="mr-2" size={10} />
             Connect on LinkedIn
           </Button>
         </div>
