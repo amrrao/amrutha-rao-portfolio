@@ -62,9 +62,9 @@ export default function Hero({ scrollToSection }: HeroProps) {
             variant="outline" 
             size="sm" 
             className="text-sm px-5 py-2"
-            onClick={() => scrollToSection("contact")}
+            onClick={() => window.open('mailto:arr2249@columbia.edu')}
           >
-            Contact
+            Email
             <Mail className="ml-2" size={16} />
           </Button>
         </div>
