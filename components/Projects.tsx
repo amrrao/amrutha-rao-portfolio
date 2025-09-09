@@ -10,7 +10,7 @@ export default function Projects() {
     {
       title: "ShadowU",
       description:
-        "Platform enabling high schoolers to shadow university students through matching and booking. Built end-to-end with modern web technologies.",
+        "Built platform enabling high schoolers to spend a day-in-the-life with a college student at their university of choice in a way that goes beyond the traditional tour. Built end-to-end with modern web technologies.",
       technologies: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Supabase", "Vercel"],
       demoLink: "https://shadowu.org",
       githubLink: null,
@@ -34,7 +34,7 @@ export default function Projects() {
     {
       title: "GreenSwing",
       description:
-        "Lead and co-founded GreenSwing. GreenSwing is a patent-pending device that generates electricity from kinetic energy of door swings. Raised $10k, won 6 international awards, was featured by global organizations, and shipped GreenSwingunits to a health clinic in rural Malawi.",
+        "Lead and co-founded GreenSwing. GreenSwing is a patent-pending device that generates electricity from kinetic energy of door swings. Raised $10k, won 6 international awards, was featured by global organizations, and shipped GreenSwing units to a health clinic in rural Malawi.",
       technologies: ["Hardware", "Sustainability", "Energy", "Innovation"],
       demoLink: "https://greenswingenergy.com/",
       githubLink: null,
@@ -42,7 +42,7 @@ export default function Projects() {
     {
       title: "EnviroScore",
       description:
-        "Award-winning iOS app that gamifies and incentivizes the fight against climate change. Won Congressional App Challenge 2nd place and international hackathon awards.",
+        "Award-winning iOS app that gamifies and incentivizes the fight against climate change. Won Congressional App Challenge 2nd place and two international hackathon awards.",
       technologies: ["Swift", "iOS", "Climate Tech", "Gamification"],
       demoLink:
         "https://docs.google.com/presentation/d/1_YaYjLg_3WKynUZLBLD4KJoUTPUad_GldCy3VU6gFfA/edit?slide=id.p#slide=id.p",
