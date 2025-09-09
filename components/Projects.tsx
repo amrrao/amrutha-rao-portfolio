@@ -8,6 +8,14 @@ import { cn } from "@/lib/utils"; // replace cn(...) with template strings if yo
 export default function Projects() {
   const projects = [
     {
+      title: "ShadowU",
+      description:
+        "Platform enabling high schoolers to shadow university students through matching and booking. Built end-to-end with modern web technologies.",
+      technologies: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Supabase", "Vercel"],
+      demoLink: "https://shadowu.org",
+      githubLink: null,
+    },
+    {
       title: "Semantic Scout",
       description:
         "AI-powered platform using semantic search and real-time research analysis to connect startups with funding and market trends. Scrapes ArXiv for emerging CS technologies and startup databases to build searchable vector spaces.",
@@ -24,11 +32,11 @@ export default function Projects() {
       githubLink: null,
     },
     {
-      title: "ShadowU",
+      title: "GreenSwing",
       description:
-        "Platform enabling high schoolers to shadow university students through matching and booking. Built end-to-end with modern web technologies.",
-      technologies: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Supabase", "Vercel"],
-      demoLink: "https://shadowu.org",
+        "Lead and co-founded GreenSwing. GreenSwing is a patent-pending device that generates electricity from kinetic energy of door swings. Raised $10k, won 6 international awards, was featured by global organizations, and shipped GreenSwingunits to a health clinic in rural Malawi.",
+      technologies: ["Hardware", "Sustainability", "Energy", "Innovation"],
+      demoLink: "https://greenswingenergy.com/",
       githubLink: null,
     },
     {
@@ -41,17 +49,9 @@ export default function Projects() {
       githubLink: null,
     },
     {
-      title: "GreenSwing",
-      description:
-        "Patent-pending device that generates electricity from kinetic energy of door swings. Co-founded startup that raised $10k and shipped units to Malawi health clinic.",
-      technologies: ["Hardware", "Sustainability", "Energy", "Innovation"],
-      demoLink: "https://greenswingenergy.com/",
-      githubLink: null,
-    },
-    {
       title: "Social Distance Wristbands",
       description:
-        "Hardware project creating wristbands that beep when within 6 feet of each other, promoting social distancing awareness through wearable technology.",
+        "Build and programmed wristbands that beep when within 6 feet of each other, enforcing social distancing. Implemented in my school.",
       technologies: ["Hardware", "IoT", "Arduino", "Sensors", "Social Tech"],
       demoLink: null,
       githubLink: null,
@@ -128,17 +128,6 @@ export default function Projects() {
                   </div>
 
                   <p className="text-muted-foreground mb-4">{project.description}</p>
-
-                  <div className="flex flex-wrap gap-2 mb-5">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-2 py-1 text-xs rounded-full bg-primary/10 text-primary border border-primary/20"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
 
                   <div className="flex gap-2">
                     {project.demoLink && (
