@@ -29,7 +29,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Experience />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </div>
     </div>
