@@ -35,7 +35,7 @@ export function HyperText({
   children,
   className,
   duration = 800,
-  delay = 0,
+  delay = -10,
   as: Component = "div",
   startOnView = false,
   animateOnHover = true,

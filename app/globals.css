@@ -41,7 +41,29 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-}
+  --animate-shine: shine var(--duration) infinite linear;
+  @keyframes shine {
+  0% {
+    background-position: 0% 0%;
+    }
+  50% {
+    background-position: 100% 100%;
+    }
+  to {
+    background-position: 0% 0%;
+    }
+  }
+  --animate-background-position-spin: background-position-spin 3000ms infinite alternate
+;
+  @keyframes background-position-spin {
+  0% {
+    background-position: top center;}
+  100% {
+    background-position: bottom center;}}
+  --animate-gradient: gradient 8s linear infinite;
+  @keyframes gradient {
+  to {
+    background-position: var(--bg-size, 300%) 0;}}}
 
 :root {
   --radius: 0.625rem;
@@ -125,23 +147,23 @@
   .animate-fade-in {
     animation: fadeIn 1s ease-out;
   }
-  
+
   .animate-fade-in-delay {
     animation: fadeIn 1s ease-out 0.2s both;
   }
-  
+
   .animate-fade-in-delay-2 {
     animation: fadeIn 1s ease-out 0.4s both;
   }
-  
+
   .animate-fade-in-delay-3 {
     animation: fadeIn 1s ease-out 0.6s both;
   }
-  
+
   .animate-fade-in-delay-4 {
     animation: fadeIn 1s ease-out 0.8s both;
   }
-  
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -152,11 +174,11 @@
       transform: translateY(0);
     }
   }
-  
+
   .animate-slide-up {
     animation: slideUp 0.6s ease-out;
   }
-  
+
   @keyframes slideUp {
     from {
       opacity: 0;
@@ -167,11 +189,11 @@
       transform: translateY(0);
     }
   }
-  
+
   .animate-scale-in {
     animation: scaleIn 0.5s ease-out;
   }
-  
+
   @keyframes scaleIn {
     from {
       opacity: 0;

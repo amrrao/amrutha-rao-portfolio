@@ -27,15 +27,6 @@ export default function Contact() {
             Connect on LinkedIn
           </Button>
         </div>
-
-        <div className="flex justify-center space-x-6">
-          <Button variant="ghost" size="lg" onClick={() => window.open('https://linkedin.com/in/amrutha-rao-ab9360239/', '_blank')}>
-            <Linkedin size={24} />
-          </Button>
-          <Button variant="ghost" size="lg" onClick={() => window.open('mailto:arr2249@columbia.edu')}>
-            <Mail size={24} />
-          </Button>
-        </div>
       </div>
     </section>
   );
