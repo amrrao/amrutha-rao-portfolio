@@ -8,6 +8,30 @@ import { cn } from "@/lib/utils"; // replace cn(...) with template strings if yo
 export default function Projects() {
   const projects = [
     {
+      title: "Eon",
+      description:
+        "AI life-simulation platform where every choice shapes an evolving character's story. Architected a scalable FastAPI/PostgreSQL backend with a dual-conversation LLM system for real-time life-simulation and per-character messaging, plus a credit-gated payment system built on Stripe.",
+      technologies: ["FastAPI", "PostgreSQL", "OpenAI API", "Stripe", "Docker", "AWS EC2", "CI/CD"],
+      demoLink: null,
+      githubLink: null,
+    },
+    {
+      title: "Co-First-Author, COLM 2026: Failure Modes in Automated ML Agents",
+      description:
+        "Co-first-authored a paper accepted to COLM 2026 diagnosing why AI research agents fail, e.g. insufficient memory, giving up too early, wasting compute, and designing fixes that improved performance on benchmark tasks.",
+      technologies: ["AI Agents", "Machine Learning Research", "LLMs", "Python"],
+      demoLink: null,
+      githubLink: null,
+    },
+    {
+      title: "TuneTree",
+      description:
+        "AI-powered music generation platform for creating and iteratively refining songs through pairwise preference selection. Next.js/React frontend, FastAPI backend, Supabase for auth/storage, containerized and deployed on AWS EC2. Won 1st Place, Entertainment Track, Columbia Hackathon.",
+      technologies: ["Next.js", "React", "FastAPI", "Supabase", "Docker", "AWS EC2"],
+      demoLink: null,
+      githubLink: "https://github.com/amrrao/TuneTree",
+    },
+    {
       title: "ShadowU",
       description:
         "Built platform enabling high schoolers to spend a day-in-the-life with a college student at their university of choice in a way that goes beyond the traditional tour. Built end-to-end with modern web technologies.",
