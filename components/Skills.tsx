@@ -12,17 +12,17 @@ export default function Skills() {
     {
       title: "Languages",
       accent: ACCENT_YELLOW,
-      skills: ["Python", "Java", "JavaScript", "TypeScript", "SQL", "Golang", "Swift", "MATLAB"],
+      skills: ["Python", "Java", "JavaScript", "TypeScript", "Go", "C", "C++", "SQL", "MATLAB", "HTML", "CSS"],
     },
     {
       title: "AI/ML",
       accent: ACCENT_MINT,
-      skills: ["PyTorch", "scikit-learn", "LlamaIndex", "XGBoost", "Random Forest"],
+      skills: ["PyTorch", "Scikit-learn", "LlamaIndex", "XGBoost", "Pandas", "NumPy", "Matplotlib"],
     },
     {
       title: "Frameworks",
       accent: ACCENT_CYAN,
-      skills: ["React.js", "Next.js", "Node.js", "FastAPI", "Tailwind CSS"],
+      skills: ["React.js", "Next.js", "Node.js", "FastAPI", "Tailwind CSS", "GraphQL"],
     },
     {
       title: "Tools",
@@ -30,14 +30,10 @@ export default function Skills() {
       skills: [
         "Git",
         "Docker",
-        "AWS",
-        "VS Code",
-        "Edge Functions",
+        "AWS (EC2, SageMaker, S3, Lambda, RDS)",
         "Supabase",
-        "Vercel",
-        "Pandas",
-        "NumPy",
-        "Matplotlib",
+        "Linux (Ubuntu)",
+        "Bash",
       ],
     },
   ];
