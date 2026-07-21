@@ -25,7 +25,7 @@ export default function About() {
           
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a Computer Science student at Columbia University with a passion for AI/ML engineering, startups, and sustainable technology. I have founded and lead multiple projects, some of which have raised funding, won international awards, are patent-pending, and been featured by global organizations.
+              I&apos;m a Computer Science student at Columbia University with a passion for AI/ML engineering, startups, and sustainable technology. I have founded and lead multiple projects, some of which have raised funding, won international awards, are patent-pending, and been featured by global organizations.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               I&apos;ve interned at companies like Fidelity Investments, PointOne, Omen, and Credytu, where I&apos;ve build backend systems and 
