@@ -5,6 +5,26 @@ import { AnimatedGradientText } from "@/components/magicui/animated-gradient-tex
 export default function Experience() {
   const experiences = [
     {
+      company: "Fidelity Investments",
+      role: "Software Engineering/Data Science/ML Intern",
+      duration: "June 2026 - August 2026",
+      location: "Boston, MA",
+      achievements: [
+        "Built and deployed ML models on AWS SageMaker to classify communication escalations, achieving 0.997 recall, for a system processing tens of millions of messages monthly",
+        "Proposed and built an unsupervised clustering model to uncover patterns invisible to existing labeling systems, after identifying gaps in how they were being categorized",
+      ],
+    },
+    {
+      company: "Columbia Data Science Institute",
+      role: "AI/ML Research Intern",
+      duration: "August 2025 - Present",
+      location: "New York, NY",
+      achievements: [
+        "Co-first-authored a paper accepted to COLM, evaluating LLM agents on MLE-Bench and identifying failure modes in tree-search-based agentic frameworks",
+        "Designed hyperparameter-tuning interventions that improved AIDE's performance on 7 of 9 benchmark tasks, and diagnosed why the same fix degraded a different agent framework",
+      ],
+    },
+    {
       company: "PointOne",
       role: "Software Engineering Intern",
       duration: "June 2025 - August 2025",

@@ -16,14 +16,6 @@ export default function Projects() {
       githubLink: null,
     },
     {
-      title: "Co-First-Author, COLM 2026: Failure Modes in Automated ML Agents",
-      description:
-        "Co-first-authored a paper accepted to COLM 2026 diagnosing why AI research agents fail, e.g. insufficient memory, giving up too early, wasting compute, and designing fixes that improved performance on benchmark tasks.",
-      technologies: ["AI Agents", "Machine Learning Research", "LLMs", "Python"],
-      demoLink: null,
-      githubLink: null,
-    },
-    {
       title: "TuneTree",
       description:
         "AI-powered music generation platform for creating and iteratively refining songs through pairwise preference selection. Next.js/React frontend, FastAPI backend, Supabase for auth/storage, containerized and deployed on AWS EC2. Won 1st Place, Entertainment Track, Columbia Hackathon.",
@@ -102,7 +94,7 @@ export default function Projects() {
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Projects</h2>
           <div className="w-24 h-1 bg-primary mx-auto" />
         </div>
 
