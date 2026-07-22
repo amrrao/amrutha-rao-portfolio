@@ -12,7 +12,7 @@ export default function Projects() {
       description:
         "AI life-simulation platform where every choice and interaction shapes an evolving character's story. Architected a scalable FastAPI/PostgreSQL backend with a dual-conversation LLM system for real-time life-simulation and per-character messaging, plus a credit-gated payment system built on Stripe.",
       technologies: ["FastAPI", "PostgreSQL", "OpenAI API", "Stripe", "Docker", "AWS EC2", "CI/CD"],
-      demoLink: null,
+      demoLink: "https://playeon.co",
       githubLink: null,
     },
     {
